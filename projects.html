@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos - Miguel Ángel Castrillón</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Íconos FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Menú de navegación (centrado) -->
+    <nav class="navbar navbar-expand navbar-light bg-light border-bottom">
+        <div class="container justify-content-center" style="max-width: 900px;">
+            <a class="navbar-brand fw-bold me-4" href="index.html">Miguel Castrillón</a>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link active" href="projects.html">Proyectos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="container my-5 flex-grow-1" style="max-width: 720px;">
+        <header class="text-center mb-5">
+            <h1 class="h2">Mis Proyectos</h1>
+            <p class="text-secondary mb-0">Proyectos de software que he desarrollado durante mi formación.</p>
+        </header>
+
+            <!-- Proyecto 1 -->
+            <article class="border rounded mb-4">
+                <div class="bg-light border-bottom px-3 py-2 rounded-top">
+                    <i class="fa-regular fa-folder-open me-2"></i><strong>---</strong>
+                </div>
+                <img src="img/proyecto1.svg" class="img-fluid w-100 border-bottom" alt="Imagen del proyecto 1">
+                <div class="p-4 text-center">
+                    <p>---</p>
+                    <button type="button" class="btn btn-outline-dark btn-sm"
+                            data-bs-toggle="modal" data-bs-target="#modalProyecto1">
+                        <i class="fa-solid fa-play me-1"></i> Ver Video
+                    </button>
+                </div>
+            </article>
+
+            <!-- Proyecto 2 -->
+            <article class="border rounded mb-4">
+                <div class="bg-light border-bottom px-3 py-2 rounded-top">
+                    <i class="fa-regular fa-folder-open me-2"></i><strong>---</strong>
+                </div>
+                <img src="img/proyecto2.svg" class="img-fluid w-100 border-bottom" alt="Imagen del proyecto 2">
+                <div class="p-4 text-center">
+                    <p>---</p>
+                    <button type="button" class="btn btn-outline-dark btn-sm"
+                            data-bs-toggle="modal" data-bs-target="#modalProyecto2">
+                        <i class="fa-solid fa-play me-1"></i> Ver Video
+                    </button>
+                </div>
+            </article>
+
+            <!-- Proyecto 3 -->
+            <article class="border rounded mb-4">
+                <div class="bg-light border-bottom px-3 py-2 rounded-top">
+                    <i class="fa-regular fa-folder-open me-2"></i><strong>---</strong>
+                </div>
+                <img src="img/proyecto3.svg" class="img-fluid w-100 border-bottom" alt="Imagen del proyecto 3">
+                <div class="p-4 text-center">
+                    <p>---</p>
+                    <button type="button" class="btn btn-outline-dark btn-sm"
+                            data-bs-toggle="modal" data-bs-target="#modalProyecto3">
+                        <i class="fa-solid fa-play me-1"></i> Ver Video
+                    </button>
+                </div>
+            </article>
+
+    </main>
+
+    <!-- ============ VENTANAS MODALES ============ -->
+    <!-- En data-video va el enlace embed: https://www.youtube.com/embed/ID_DEL_VIDEO (reemplaza el ---) -->
+
+    <!-- Modal Proyecto 1 -->
+    <div class="modal fade" id="modalProyecto1" tabindex="-1" aria-labelledby="tituloModal1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tituloModal1">Video del Proyecto 1 - ---</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe data-video="https://www.youtube.com/embed/---" src="" title="Video del proyecto 1"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Proyecto 2 -->
+    <div class="modal fade" id="modalProyecto2" tabindex="-1" aria-labelledby="tituloModal2" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tituloModal2">Video del Proyecto 2 - ---</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe data-video="https://www.youtube.com/embed/---" src="" title="Video del proyecto 2"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Proyecto 3 -->
+    <div class="modal fade" id="modalProyecto3" tabindex="-1" aria-labelledby="tituloModal3" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tituloModal3">Video del Proyecto 3 - ---</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe data-video="https://www.youtube.com/embed/---" src="" title="Video del proyecto 3"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página (centrado) -->
+    <footer class="bg-light border-top text-center py-4 small mt-auto">
+        <div class="container" style="max-width: 900px;">
+            <p class="mb-2">
+                <a href="---" target="_blank" class="text-dark text-decoration-none mx-2 fs-5" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="---" target="_blank" class="text-dark text-decoration-none mx-2 fs-5" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="---" target="_blank" class="text-dark text-decoration-none mx-2 fs-5" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            </p>
+            <p class="mb-1">
+                <a href="mailto:miguelcastrillon8b@gmail.com" class="text-dark text-decoration-none">
+                    <i class="fa-regular fa-envelope me-1"></i> miguelcastrillon8b@gmail.com
+                </a>
+            </p>
+            <p class="mb-0 text-secondary">&copy; 2026 Miguel Ángel Castrillón Cano · Ingeniería de Software - 4.º Semestre</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <!-- jQuery para los modales: carga el video al abrir y lo detiene al cerrar. -->
+    <script>
+        $(document).ready(function () {
+            $('.modal').on('show.bs.modal', function () {
+                var $iframe = $(this).find('iframe');
+                $iframe.attr('src', $iframe.data('video'));
+            });
+            $('.modal').on('hidden.bs.modal', function () {
+                $(this).find('iframe').attr('src', '');
+            });
+        });
+    </script>
+</body>
+</html>
