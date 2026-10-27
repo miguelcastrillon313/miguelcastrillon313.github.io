@@ -1,14 +1,138 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-5">
-  <title>HTML</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="estilo.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio - Miguel Ángel Castrillón</title>
 
-<body>
-  <p>Esta página web es una página HTML válida.</p>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Íconos FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Logos de tecnologías (Devicon) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Menú de navegación (centrado) -->
+    <nav class="navbar navbar-expand navbar-light bg-light border-bottom">
+        <div class="container justify-content-center" style="max-width: 900px;">
+            <a class="navbar-brand fw-bold me-4" href="index.html">Miguel Castrillón</a>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="projects.html">Proyectos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="container my-5 flex-grow-1" style="max-width: 900px;">
+
+        <!-- Encabezado -->
+        <header class="text-center mb-5">
+            <img src="img/perfil.svg" alt="Foto de Miguel Ángel Castrillón" class="rounded-circle border mb-3" style="width: 130px; height: 130px; object-fit: cover;">
+            <h1 class="h2">Miguel Ángel Castrillón Cano</h1>
+            <p class="text-secondary mb-0">Estudiante de Ingeniería de Software (4.º semestre) en la Institución Universitaria Pascual Bravo y Técnico en Sistemas.</p>
+        </header>
+
+        <!-- Sobre mí -->
+        <section class="border rounded mb-4">
+            <div class="bg-light border-bottom px-3 py-2 rounded-top">
+                <i class="fa-regular fa-user me-2"></i><strong>Sobre mí</strong>
+            </div>
+            <div class="p-4">
+                <p class="mb-0">Soy estudiante de Ingeniería de Software con formación técnica en Sistemas. Soy responsable, dedicado y me adapto con facilidad a diferentes entornos de trabajo. Tengo habilidades en desarrollo de software, soporte técnico, bases de datos y programación en C# y C++, además de experiencia en instalación y configuración de sistemas operativos. Busco una oportunidad en el sector tecnológico para aportar con entusiasmo, disciplina y compromiso al desarrollo de proyectos y a mi crecimiento profesional.</p>
+            </div>
+        </section>
+
+        <!-- Educación -->
+        <section class="border rounded mb-4">
+            <div class="bg-light border-bottom px-3 py-2 rounded-top">
+                <i class="fa-solid fa-graduation-cap me-2"></i><strong>Educación</strong>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item px-4 py-3">
+                    <strong>Ingeniería de Software (4.º semestre)</strong><br>
+                    <span class="text-secondary small">Institución Universitaria Pascual Bravo, Medellín · 2024 - actualmente</span>
+                </li>
+                <li class="list-group-item px-4 py-3">
+                    <strong>Técnico en Sistemas (Bachiller técnico)</strong><br>
+                    <span class="text-secondary small">Institución Educativa Rural El Tablazo, Barbosa · 2018 - 2023</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Habilidades técnicas -->
+        <section class="border rounded mb-4">
+            <div class="bg-light border-bottom px-3 py-2 rounded-top">
+                <i class="fa-solid fa-code me-2"></i><strong>Habilidades</strong>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item px-4 py-3 d-flex align-items-center">
+                    <i class="devicon-csharp-plain colored fs-4 me-3 text-center" style="width: 2rem;"></i> C#
+                </li>
+                <li class="list-group-item px-4 py-3 d-flex align-items-center">
+                    <i class="devicon-cplusplus-plain colored fs-4 me-3 text-center" style="width: 2rem;"></i> C++
+                </li>
+                <li class="list-group-item px-4 py-3 d-flex align-items-center">
+                    <i class="fa-solid fa-database fs-4 me-3 text-center text-secondary" style="width: 2rem;"></i> Bases de datos relacionales
+                </li>
+                <li class="list-group-item px-4 py-3 d-flex align-items-center">
+                    <i class="fa-solid fa-diagram-project fs-4 me-3 text-center text-secondary" style="width: 2rem;"></i> Lógica y estructuras de datos
+                </li>
+                <li class="list-group-item px-4 py-3 d-flex align-items-center">
+                    <i class="fa-solid fa-headset fs-4 me-3 text-center text-secondary" style="width: 2rem;"></i> Soporte técnico
+                </li>
+                <li class="list-group-item px-4 py-3 d-flex align-items-center">
+                    <i class="fa-solid fa-desktop fs-4 me-3 text-center text-secondary" style="width: 2rem;"></i> Instalación y configuración de sistemas operativos
+                </li>
+            </ul>
+        </section>
+
+        <!-- Habilidades personales -->
+        <section class="border rounded mb-4">
+            <div class="bg-light border-bottom px-3 py-2 rounded-top">
+                <i class="fa-regular fa-handshake me-2"></i><strong>Habilidades personales</strong>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item px-4 py-3">Comunicación efectiva y escucha activa</li>
+                <li class="list-group-item px-4 py-3">Trabajo en equipo y colaboración</li>
+                <li class="list-group-item px-4 py-3">Organización y cumplimiento de tareas</li>
+                <li class="list-group-item px-4 py-3">Adaptabilidad a diferentes entornos laborales</li>
+                <li class="list-group-item px-4 py-3">Actitud proactiva y disposición para aprender</li>
+                <li class="list-group-item px-4 py-3">Responsabilidad y compromiso con el trabajo</li>
+                <li class="list-group-item px-4 py-3">Puntualidad y manejo del tiempo</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Pie de página (centrado) -->
+    <footer class="bg-light border-top text-center py-4 small mt-auto">
+        <div class="container" style="max-width: 900px;">
+            <p class="mb-2">
+                <a href="---" target="_blank" class="text-dark text-decoration-none mx-2 fs-5" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="---" target="_blank" class="text-dark text-decoration-none mx-2 fs-5" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="---" target="_blank" class="text-dark text-decoration-none mx-2 fs-5" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            </p>
+            <p class="mb-1">
+                <a href="mailto:miguelcastrillon8b@gmail.com" class="text-dark text-decoration-none">
+                    <i class="fa-regular fa-envelope me-1"></i> miguelcastrillon8b@gmail.com
+                </a>
+            </p>
+            <p class="mb-0 text-secondary">&copy; 2026 Miguel Ángel Castrillón Cano · Ingeniería de Software - 4.º Semestre</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+
 </body>
 </html>
 
